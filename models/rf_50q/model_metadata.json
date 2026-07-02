@@ -1,1 +1,28 @@
-
+{
+  "key": "rf_50q",
+  "label": "Random Forest, batas median 50%",
+  "short_label": "RF 50% median",
+  "artifact_filename": "random_forest.joblib",
+  "reference_frame_filename": "reference_frame.csv",
+  "class_boundary_gain": 0.768627451,
+  "low_gain_rule": "low_gain jika gain <= 0.768627451",
+  "high_gain_rule": "high_gain jika gain > 0.768627451",
+  "boundary_note": "Batas gain rendah/tinggi 50% median: low_gain jika gain <= 0.768627451 dan high_gain jika gain > 0.768627451.",
+  "decision_note": "Random Forest dengan stabilitas split terbaik pada batas median.",
+  "required_input_columns": [
+    "Well",
+    "Tipe Acid",
+    "Sandstone",
+    "Siltstone",
+    "Claystone",
+    "Shale",
+    "Coal",
+    "Limestone",
+    "IPR Vogel sebelum pengasaman (BFPD)",
+    "Batas Reservoar"
+  ],
+  "allowed_acid_options": [
+    "Mud Acidizing 12% HCl : 3% HF",
+    "Matrix Acidizing 15% HCl"
+  ]
+}
